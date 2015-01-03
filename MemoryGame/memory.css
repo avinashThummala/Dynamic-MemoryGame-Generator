@@ -1,0 +1,151 @@
+a img {
+	border:0
+}
+body{
+	background:#000;
+}
+.memory {
+	margin:0 auto;
+}
+
+.bg {
+	position:absolute;
+}
+.gameover {
+	z-index:11;
+	position:relative;
+	margin:0 auto;
+	display:none;
+	font-family:Helvetica, sans-serif;
+}
+.gameover_bg {
+	margin:0px auto;
+	position:relative;
+	background:rgb(68, 68, 68);
+	background:rgba(68, 68, 68, .95);
+	border:5px solid #fff;
+	width:400px;
+	height:auto;
+	text-align:center;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	-webkit-border-radius:25px;
+}
+.gameover_bg p {
+	color:#ccc;
+}
+.gameover_bg a {
+	color:#fff;
+	text-decoration:none;
+	cursor: pointer;
+}
+.gameover_bg a:hover {
+	color:#ccc;
+}
+h1 {
+	color:#fff;
+	font-size:35px;
+	margin-bottom:-10px;
+	margin-top:15px;
+}
+.ie7 h1 {
+	margin-bottom:-15px;
+}
+.ie7 .gameover_bg p {
+	margin-bottom:-8px;
+}
+.ie7 .gameover_bg p#onemoretime {
+	margin-bottom:15px;
+}
+.spin{
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+.cards {
+	z-index:10;
+	position:absolute;
+
+}
+.card_holder{
+	
+	position:relative;
+	float:left;
+	perspective: 600px;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+}
+.card{
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transition:.5s;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	position:relative;
+}
+.cardFront,.cardBack{
+		position: absolute;
+		top: 0;
+		left: 0;
+		/*backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility:hidden;*/
+}
+
+.backVis {
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+}
+
+.cardFront{
+		z-index: 2;
+
+}
+
+.cardBack{
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+
+.notransform{
+	transform: rotateY(0deg) !important;
+	-webkit-transform: rotateY(0deg) !important;
+	-moz-transform: rotateY(0deg) !important;
+}
+
+.gametitle{
+	color:white;
+	font-size:25px;
+	/*font-size: 4.0vmin;*/
+	font-weight:bold;
+	margin:10px 0px;
+}
+
+#clock{
+	color:yellow	/*padding:0 20px;*/;
+}
+
+.timer{
+	background-color:black;
+	color:white;
+	font-size:14px;
+	/*font-size: 3.0vmin;*/	
+	text-align:left;
+	width:auto;
+	font-weight:bold;
+	position:relative;
+	display: inline-block;
+	top:10px;
+	float:right;
+	/*
+	border:2px solid white;
+	padding:10px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-webkit-border-radius:12px;
+	*/
+}
